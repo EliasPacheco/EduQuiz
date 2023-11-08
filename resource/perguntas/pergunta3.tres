@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+[ext_resource path="res://imagens/gameprivacy.png" type="Image" id=2]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quais cuidados devemos ter ao navegar na Web utilizando cookies?"
+type = 1
+question_image = ExtResource( 2 )
+options = [ "Definir o nível de permissão de cookies como \"Baixo\"", "Configurar para que os cookies de Terceiros sejam aceitos", "Configurar para que os cookies sejam eliminados ao fechar a página", "" ]
+correct = "Configurar para que os cookies sejam eliminados ao fechar a página"

@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scripts/popup_name.gd" type="Script" id=1]
+[ext_resource path="res://imagens/button/salvarc.png" type="Texture" id=2]
+[ext_resource path="res://scripts/ColorRect.gd" type="Script" id=3]
+[ext_resource path="res://imagens/button/salvare.png" type="Texture" id=4]
+[ext_resource path="res://legendas/Roboto-Black.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
+
+[node name="popup_name" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -19.0
+margin_top = -17.0
+margin_right = 1292.0
+margin_bottom = 743.0
+color = Color( 0.623529, 0.603922, 0.603922, 1 )
+script = ExtResource( 3 )
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 542.0
+margin_top = 368.0
+margin_right = 754.0
+margin_bottom = 430.0
+custom_fonts/font = SubResource( 1 )
+clear_button_enabled = true
+placeholder_text = "Nome e Sobrenome"
+placeholder_alpha = 0.9
+caret_blink = true
+
+[node name="saveButton" type="TextureButton" parent="."]
+margin_left = 556.0
+margin_top = 440.0
+margin_right = 966.0
+margin_bottom = 539.0
+rect_scale = Vector2( 0.45, 0.45 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
+
+[connection signal="pressed" from="saveButton" to="." method="_on_saveButton_pressed"]
