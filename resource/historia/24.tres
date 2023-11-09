@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o imperador do Brasil quando a escravidão foi oficialmente abolida?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Dom Pedro II", "Dom João VI", "Dom Pedro I", "Dom Manuel I" ]
+correct = "Dom Pedro II"

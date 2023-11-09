@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o líder do movimento abolicionista no Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Dom Pedro II", "Tiradentes", "Zumbi dos Palmares", "Joaquim Nabuco" ]
+correct = "Joaquim Nabuco"

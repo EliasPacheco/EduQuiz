@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é latitude?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Distância leste ou oeste do meridiano de Greenwich", "Distância norte ou sul do Equador", "Distância vertical de um ponto em relação ao nível do mar", "Distância entre dois pontos na superfície da Terra" ]
+correct = "Distância norte ou sul do Equador"

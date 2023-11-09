@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quais são os pontos cardeais?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Norte, sul, leste e oeste", "Cima, baixo, esquerda e direita", "Praia, montanha, cidade e campo", "Inverno, primavera, verão e outono" ]
+correct = "Norte, sul, leste e oeste"

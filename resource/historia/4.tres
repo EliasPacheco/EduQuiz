@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que a Independência do Brasil representou?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "O fim do Brasil", "O início do governo monárquico", "A autonomia do Brasil em relação a Portugal", "A união do Brasil com outros países sul-americanos" ]
+correct = "A autonomia do Brasil em relação a Portugal"

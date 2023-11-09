@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o líder político responsável pela criação do Estado Novo no Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Getúlio Vargas", "Juscelino Kubitschek", "João Goulart", "Café Filho" ]
+correct = "Getúlio Vargas"

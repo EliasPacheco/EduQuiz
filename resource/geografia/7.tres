@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Em qual hemisfério o Brasil está localizado?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Hemisfério Norte", "Hemisfério Sul", "Hemisfério Leste", "Hemisfério Oeste" ]
+correct = "Hemisfério Sul"

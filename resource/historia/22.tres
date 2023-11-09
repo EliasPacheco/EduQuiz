@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o navegador português que chegou à Índia contornando o Cabo da Boa Esperança?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Cristóvão Colombo", "Fernão Mendes Pinto", "Vasco da Gama", "Bartolomeu Dias" ]
+correct = "Vasco da Gama"

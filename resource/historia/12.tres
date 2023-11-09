@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual foi o movimento que defendeu a igualdade de direitos civis nos Estados Unidos na década de 1960?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Movimento pelos Direitos das Mulheres", "Movimento Hippie", "Movimento pelos Direitos Civis", "Movimento pelos Direitos dos Trabalhadores" ]
+correct = "Movimento pelos Direitos Civis"

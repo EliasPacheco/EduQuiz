@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que foi a Revolução Russa de 1917?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Uma revolta contra a monarquia russa", "Uma guerra entre Rússia e Alemanha", "Uma revolução industrial", "Uma revolução cultural" ]
+correct = "Uma revolta contra a monarquia russa"

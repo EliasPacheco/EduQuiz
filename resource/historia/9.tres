@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi a primeira mulher a se tornar presidente do Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Dilma Rousseff", "Maria Quitéria", "Getúlio Vargas", "Juscelino Kubitschek" ]
+correct = "Dilma Rousseff"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Em que ano a Proclamação da República ocorreu no Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "1822", "1889", "1500", "1964" ]
+correct = "1889"

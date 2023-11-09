@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um deserto?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Uma área coberta por gelo", "Uma região com muitas árvores", "Uma área com pouca vegetação e pouca chuva", "Uma grande montanha" ]
+correct = "Uma área com pouca vegetação e pouca chuva"

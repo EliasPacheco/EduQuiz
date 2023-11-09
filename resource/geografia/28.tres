@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que são coordenadas geográficas?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Números usados para identificar um país", "Linhas imaginárias que indicam pontos na Terra", "Símbolos usados em mapas", "Nomes de cidades importantes" ]
+correct = "Linhas imaginárias que indicam pontos na Terra"

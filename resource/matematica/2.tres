@@ -7,4 +7,4 @@ script = ExtResource( 1 )
 question_info = "Se você tem 5 balas e come 2, quantas balas restam?"
 type = 1
 options = [ "3", "12", "18", "24" ]
-correct = "12"
+correct = "3"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem descobriu o Brasil em 1500?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Cristóvão Colombo", "Américo Vespúcio", "Pedro Álvares Cabral", "Fernando Magalhães" ]
+correct = "Pedro Álvares Cabral"

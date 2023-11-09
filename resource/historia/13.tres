@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o líder sul-africano que lutou contra o apartheid?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Nelson Mandela", "Desmond Tutu", "Robert Mugabe", "Fidel Castro" ]
+correct = "Nelson Mandela"

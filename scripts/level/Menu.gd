@@ -3,7 +3,8 @@ extends Node2D
 var popup_instance
 
 func _ready():
-	pass
+	var audio_stream = load("res://cena/audio.tscn")  # Assumindo que é um AudioStream
+	AudioManager.play_sound(audio_stream)
 
 func _on_start_pressed():
 	popup_instance = preload("res://cena/popup_name.tscn").instance()

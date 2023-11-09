@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi a primeira mulher a votar no Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Maria Quitéria", "Anita Garibaldi", "Princesa Isabel", "Celina Guimarães" ]
+correct = "Celina Guimarães"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual era a principal atividade econômica dos povos indígenas brasileiros antes da chegada dos portugueses?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Agricultura", "Pesca", "Caça e coleta", "Mineração" ]
+correct = "Caça e coleta"

@@ -7,4 +7,4 @@ script = ExtResource( 1 )
 question_info = "Se você tem 1,000 reais e gasta 350 reais, quanto dinheiro você tem restante?"
 type = 1
 options = [ "600", "650", "750", "850" ]
-correct = "750"
+correct = "650"

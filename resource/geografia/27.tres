@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um mapa-múndi?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Um mapa de uma cidade", "Um mapa de um país", "Um mapa que mostra todos os países e continentes do mundo", "Um mapa de uma região específica" ]
+correct = "Um mapa que mostra todos os países e continentes do mundo"

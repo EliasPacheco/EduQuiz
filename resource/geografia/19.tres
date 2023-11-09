@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Em qual continente está localizado o Deserto do Saara?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "América do Sul", "África", "Ásia", "Europa" ]
+correct = "África"

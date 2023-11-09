@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o líder da Revolução Cubana?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Che Guevara", "Fidel Castro", "Raúl Castro", "Fulgencio Batista" ]
+correct = "Fidel Castro"

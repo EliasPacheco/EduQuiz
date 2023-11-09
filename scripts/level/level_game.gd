@@ -21,11 +21,22 @@ onready var question_video := $question_info/image_holder/question_video
 onready var question_audio := $question_info/image_holder/question_audio
 
 func _ready():
+	print("QuizScreen.gd: _ready() chamado")
+	
+	# Obtendo uma referência direta ao AudioManager
+	var audio_manager = get_node("res://cena/audio.tscn")  # Substitua pelo caminho correto se necessário
+	
+	# Chamando stop_current_sound() na referência correta
+	if audio_manager:
+		audio_manager.stop_current_sound()
 	Global.gameState = true
 	for _button in $question_holder.get_children():
 		buttons.append(_button)
 		_button.focus_mode = Button.FOCUS_NONE
-	
+		
+	var game = $game
+	game.play()
+	game.volume_db = -37
 	quiz_shuffle = randomize_array(bd_quiz.bd)
 	#quiz_shuffle.resize(15) 
 	$txt_qntd.text = str(index, "/", bd_quiz.bd.size())
@@ -35,7 +46,6 @@ func load_quiz() -> void:
 	if index >= bd_quiz.bd.size():
 		game_over()
 		return
-	
 	#texto pergunta
 	question_texts.text = str(quiz_shuffle[index].question_info)
 	
@@ -78,6 +88,9 @@ func buttons_answer(button):
 	var selected_option = button.get_node("Label").text  # Obtém a opção selecionada pelo usuário
 
 	if bd_quiz.bd[index].correct == selected_option:  # Verifica se a resposta selecionada está correta
+		var click = $click
+		click.play()
+		click.volume_db = -15
 		button.modulate = cor_certa
 		Global.correct += 1
 		Global.pontos += 1
@@ -85,10 +98,17 @@ func buttons_answer(button):
 		if Global.pontos > Global.recorde:
 			Global.recorde = Global.pontos
 			Global.salvar_jogo()
-		$audio_correto.play()
+		var correto = $audio_correto
+		correto.play()
+		correto.volume_db = -25
 	else: 
+		var click = $click
+		click.play()
+		click.volume_db = -15
 		button.modulate = cor_errada
-		$audio_errado.play()
+		var errado = $audio_errado
+		errado.play()
+		errado.volume_db = -25
 
 		# Encontra o botão com a resposta correta
 		for bt in buttons:
@@ -97,6 +117,7 @@ func buttons_answer(button):
 
 	$redondo.value = 0
 	_next_question()
+	button_locked = false
 
 	
 func _next_question():
@@ -125,6 +146,10 @@ func randomize_array(array : Array) -> Array:
 	return array_temp
 
 func game_over():
+	var applause_player = $aplausos
+	applause_player.play()
+	applause_player.volume_db = -35
+	$game.stop()
 	$pause.hide()
 	$valor.hide()
 	$Acertivas.hide()
@@ -134,6 +159,7 @@ func game_over():
 	$timer.stop()
 	$redondo.hide()
 	$txt_timer.hide() 
+	$timer.disconnect("timeout", self, "_on_timer_timeout")
 	
 
 func _on_timer_timeout():
@@ -158,10 +184,8 @@ func _on_btn_menu_pressed():
 func _on_button_option_1_mouse_entered():
 	$question_holder/button_option_1/Seta.show()
 
-
 func _on_button_option_1_mouse_exited():
 	$question_holder/button_option_1/Seta.hide()
-
 
 func _on_button_option_2_mouse_entered():
 	$question_holder/button_option_2/Seta2.show()

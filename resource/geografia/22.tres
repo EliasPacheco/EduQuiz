@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quais são os principais elementos climáticos?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Chuva, neve e vento", "Temperatura, umidade, pressão atmosférica e vento", "Sol, lua e estrelas", "Tsunami, terremoto e furacão" ]
+correct = "Temperatura, umidade, pressão atmosférica e vento"

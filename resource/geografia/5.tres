@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o maior oceano do mundo?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Atlântico", "Ártico", "Índico", "Pacífico" ]
+correct = "Pacífico"

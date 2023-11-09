@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o nome do maior deserto do mundo em área?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Deserto do Saara", "Deserto de Atacama", "Deserto da Arábia", "Antártica" ]
+correct = "Antártica"

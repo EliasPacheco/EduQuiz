@@ -3,6 +3,7 @@ extends Node2D
 var buttons := []
 
 func _ready():
+	AudioManager.play_sound(load("res://cena/audio.tscn"))
 	for _button in $botoes.get_children():
 		buttons.append(_button)
 		_button.focus_mode = Button.FOCUS_NONE
@@ -17,48 +18,59 @@ func _on_button_mouse_exited(button):
 
 
 func _on_port_pressed():
-		get_tree().change_scene("res://cena/portugues.tscn")
+	$click.play()
+	yield(get_tree().create_timer(0.3), "timeout")
+	get_tree().change_scene("res://cena/portugues.tscn")
+		
 
 
 func _on_mat_pressed():
+	$click.play()
+	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/matematica.tscn")
 
-
 func _on_geo_pressed():
+	$click.play()
+	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/geografia.tscn")
 
-
 func _on_hist_pressed():
+	$click.play()
+	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/historia.tscn")
-
 
 func _on_port_mouse_entered():
 	$Seta.show()
-
+	var escolha = $escolha
+	escolha.play()
+	escolha.volume_db = -28
 
 func _on_port_mouse_exited():
 	$Seta.hide()
 
-
 func _on_mat_mouse_entered():
 	$Seta2.show()
-
+	var escolha = $escolha
+	escolha.play()
+	escolha.volume_db = -28
 
 func _on_mat_mouse_exited():
 	$Seta2.hide()
 
-
 func _on_geo_mouse_entered():
 	$Seta3.show()
-
+	var escolha = $escolha
+	escolha.play()
+	escolha.volume_db = -28
 
 func _on_geo_mouse_exited():
 	$Seta3.hide()
 
-
 func _on_hist_mouse_entered():
 	$Seta4.show()
-
+	var escolha = $escolha
+	escolha.play()
+	escolha.volume_db = -28
 
 func _on_hist_mouse_exited():
 	$Seta4.hide()

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quais são as principais camadas da Terra, da superfície para o centro?"
 type = 1
-options = [  ]
-correct = ""
+options = [ "Núcleo, manto e crosta", "Crosta, núcleo e manto", "Manto, crosta e núcleo", "Núcleo, crosta e manto" ]
+correct = "Manto, crosta e núcleo"

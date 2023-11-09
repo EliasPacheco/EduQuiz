@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um continente?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Uma grande cidade", "Uma extensão de terra cercada por água", "Um tipo de nuvem", "Uma espécie de árvore" ]
+correct = "Uma extensão de terra cercada por água"

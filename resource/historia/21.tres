@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que os egípcios antigos usavam para escrever em pergaminhos?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Pincel e tinta", "Caneta esferográfica", "Cinzel e pedra", "Pena e tinta" ]
+correct = "Pena e tinta"

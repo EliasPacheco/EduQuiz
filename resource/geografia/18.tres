@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um mapa?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Um brinquedo", "Um instrumento musical", "Uma representação gráfica de uma área", "Um tipo de animal" ]
+correct = "Uma representação gráfica de uma área"

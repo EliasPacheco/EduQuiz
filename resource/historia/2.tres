@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que os índios brasileiros costumavam usar para pintar seus corpos?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Tintas naturais", "Canetas", "Tinta a óleo", "Giz de cera" ]
+correct = "Tintas naturais"

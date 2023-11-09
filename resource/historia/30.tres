@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi Dom Pedro I do Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Um líder indígena", "O primeiro presidente do Brasil", "O imperador que proclamou a independência do país", "Um explorador português" ]
+correct = "O imperador que proclamou a independência do país"

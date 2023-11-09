@@ -7,4 +7,4 @@ script = ExtResource( 1 )
 question_info = "Qual é o resultado de 7 x 8 + 4?"
 type = 1
 options = [ "60", "52", "56", "68" ]
-correct = "56"
+correct = "60"

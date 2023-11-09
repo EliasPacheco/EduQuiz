@@ -34,6 +34,7 @@ config/icon="res://icon.png"
 
 TelaPause="*res://cena/TelaPause.tscn"
 Global="*res://scripts/level/Global.gd"
+AudioManager="*res://cena/AudioManager.tscn"
 
 [display]
 

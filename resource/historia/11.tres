@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o líder dos Estados Unidos durante a Guerra Fria?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Winston Churchill", "Franklin D. Roosevelt", "John F. Kennedy", "Richard Nixon" ]
+correct = "John F. Kennedy"

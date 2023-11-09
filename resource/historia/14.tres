@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual foi o evento que marcou o fim da Guerra Fria?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Queda do Muro de Berlim", "Revolução Cubana", "Guerra do Golfo", "Revolução Chinesa" ]
+correct = "Queda do Muro de Berlim"

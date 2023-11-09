@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o nome do país em que vivemos?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Brasil", "Argentina", "Estados Unidos", "Canadá" ]
+correct = "Brasil"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual foi o evento que desencadeou a Primeira Guerra Mundial?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Assassinato do Arquiduque Francisco Ferdinando", "Bombardeio de Pearl Harbor", "Tratado de Versalhes", "Queda do Muro de Berlim" ]
+correct = "Assassinato do Arquiduque Francisco Ferdinando"

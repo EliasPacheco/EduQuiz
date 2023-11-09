@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o maior rio do mundo em volume de água?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Nilo", "Amazonas", "Yangtzé", "Mississippi" ]
+correct = "Amazonas"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é a cor que representa a água nos mapas?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Verde", "Azul", "Amarelo", "Vermelho" ]
+correct = "Azul"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um rio?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Uma cidade grande", "Uma extensa área de terra", "Uma corrente de água", "Uma montanha alta" ]
+correct = "Uma corrente de água"

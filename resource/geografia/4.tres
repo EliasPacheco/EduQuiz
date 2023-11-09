@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é a capital do Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "São Paulo", "Rio de Janeiro", "Brasília", "Salvador" ]
+correct = "Brasília"

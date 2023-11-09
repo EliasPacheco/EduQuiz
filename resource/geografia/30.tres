@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = "Qual é o contrário de \"bom\"?"
+question_info = "O que é uma ilha?"
 type = 1
-options = [ "alto", "mau", "grande", "lento" ]
-correct = "mau"
+options = [ "Uma montanha alta", "Uma área coberta por gelo", "Uma porção de terra cercada por água por todos os lados", "Uma extensa planície" ]
+correct = "Uma porção de terra cercada por água por todos os lados"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o nome do maior planeta do nosso sistema solar?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Terra", "Marte", "Júpiter", "Vênus" ]
+correct = "Júpiter"

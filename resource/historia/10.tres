@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual foi o evento que marcou o início da Segunda Guerra Mundial?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "A Revolução Russa", "O ataque a Pearl Harbor", "O Tratado de Versalhes", "A invasão da Polônia" ]
+correct = "A invasão da Polônia"

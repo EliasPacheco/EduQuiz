@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um fuso horário?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Uma linha que divide continentes", "Uma região onde o tempo é o mesmo", "Uma linha que indica os pontos cardeais", "Uma linha imaginária que divide a Terra em áreas com horários diferentes" ]
+correct = "Uma linha imaginária que divide a Terra em áreas com horários diferentes"

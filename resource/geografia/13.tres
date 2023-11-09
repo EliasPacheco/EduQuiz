@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quais são os oceanos que banham o Brasil?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Atlântico e Índico", "Pacífico e Antártico", "Atlântico e Pacífico", "Índico e Ártico" ]
+correct = "Atlântico e Pacífico"

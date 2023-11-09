@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que é um país tropical?"
 type = 1
-options = [  ]
-correct = ""
+options = [ "Um país com muitas montanhas", "Um país com clima quente durante todo o ano", "Um país coberto por gelo", "Um país sem estações do ano" ]
+correct = "Um país com clima quente durante todo o ano"

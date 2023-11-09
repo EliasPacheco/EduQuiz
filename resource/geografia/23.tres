@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o ponto mais alto do mundo, localizado no Himalaia?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Monte Kilimanjaro", "Monte Elbrus", "Monte Everest", "Monte McKinley" ]
+correct = "Monte Everest"

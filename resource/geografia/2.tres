@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Em qual direção o sol se põe?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Leste", "Oeste", "Norte", "Sul" ]
+correct = "Oeste"

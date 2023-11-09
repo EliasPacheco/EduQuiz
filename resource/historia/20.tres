@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quem foi o líder nazista durante a Segunda Guerra Mundial?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Benito Mussolini", "Adolf Hitler", "Hirohito", "Joseph Stalin" ]
+correct = "Adolf Hitler"

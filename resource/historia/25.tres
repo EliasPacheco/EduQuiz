@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que foi o Renascimento?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Um período de renovação cultural, artística e científica na Europa", "Um movimento de independência na América Latina", "Uma revolução industrial na Inglaterra", "Uma guerra entre França e Inglaterra" ]
+correct = "Um período de renovação cultural, artística e científica na Europa"

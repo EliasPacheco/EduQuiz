@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual foi o evento que marcou o início da Revolução Industrial na Inglaterra?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Invenção do motor a vapor", "Descobrimento da eletricidade", "Revolução Francesa", "Invenção da locomotiva a vapor" ]
+correct = "Invenção do motor a vapor"

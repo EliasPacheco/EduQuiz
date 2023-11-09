@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "O que foi a Guerra Civil Americana?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Uma guerra entre Estados Unidos e México", "Uma guerra entre o Norte e o Sul dos Estados Unidos pela abolição da escravidão", "Uma guerra entre Estados Unidos e Canadá", "Uma guerra contra os povos indígenas americanos" ]
+correct = "Uma guerra entre o Norte e o Sul dos Estados Unidos pela abolição da escravidão"

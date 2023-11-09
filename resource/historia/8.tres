@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual civilização antiga construiu as pirâmides do Egito?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Gregos", "Romanos", "Egípcios", "Mesopotâmicos" ]
+correct = "Egípcios"
