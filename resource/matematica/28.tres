@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Se você tem um terço de uma pizza e come mais um terço, quanto da pizza você comeu?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Dois terços", "Um quarto", "Metade", "Um terço" ]
+correct = "Dois terços"

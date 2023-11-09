@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Se uma caixa contém 24 lápis e você retira 7 lápis, quantos lápis ainda estão na caixa?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "14", "17", "10", "31" ]
+correct = "17"

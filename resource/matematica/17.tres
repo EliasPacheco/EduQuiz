@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o número que vem antes de 9?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "10", "8", "7", "5" ]
+correct = "8"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Se um pacote de lápis custa 6 reais e você compra 4 pacotes, quanto você gastará no total?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "10 reais", "16 reais", "20 reais", "24 reais" ]
+correct = "16 reais"

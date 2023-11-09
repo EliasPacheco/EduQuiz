@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Se você tiver 8 lápis e der 3 a um amigo, quantos lápis você terá?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "2", "5", "8", "11" ]
+correct = "5"

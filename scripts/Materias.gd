@@ -18,3 +18,47 @@ func _on_button_mouse_exited(button):
 
 func _on_port_pressed():
 		get_tree().change_scene("res://cena/portugues.tscn")
+
+
+func _on_mat_pressed():
+	get_tree().change_scene("res://cena/matematica.tscn")
+
+
+func _on_geo_pressed():
+	get_tree().change_scene("res://cena/geografia.tscn")
+
+
+func _on_hist_pressed():
+	get_tree().change_scene("res://cena/historia.tscn")
+
+
+func _on_port_mouse_entered():
+	$Seta.show()
+
+
+func _on_port_mouse_exited():
+	$Seta.hide()
+
+
+func _on_mat_mouse_entered():
+	$Seta2.show()
+
+
+func _on_mat_mouse_exited():
+	$Seta2.hide()
+
+
+func _on_geo_mouse_entered():
+	$Seta3.show()
+
+
+func _on_geo_mouse_exited():
+	$Seta3.hide()
+
+
+func _on_hist_mouse_entered():
+	$Seta4.show()
+
+
+func _on_hist_mouse_exited():
+	$Seta4.hide()

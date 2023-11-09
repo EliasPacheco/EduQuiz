@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é a forma geométrica que tem 4 lados de tamanhos iguais?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "Retângulo", "Círculo", "Quadrado", "Triângulo" ]
+correct = "Quadrado"

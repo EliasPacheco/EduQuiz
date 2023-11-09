@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Se você tem 10 figurinhas e dá 2 para um amigo, quantas figurinhas você tem agora?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "10", "12", "8", "6" ]
+correct = "8"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o valor de pi (π) aproximadamente?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "2", "3.14", "4", "1.5" ]
+correct = "3.14"

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é o número primo mais próximo de 20?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "15", "21", "19", "30" ]
+correct = "19"

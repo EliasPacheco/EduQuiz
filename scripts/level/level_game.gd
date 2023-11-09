@@ -107,7 +107,7 @@ func _next_question():
 	
 	yield(get_tree().create_timer(1.3), "timeout")
 	for bt in buttons:
-		bt.modulate = Color.black
+		bt.modulate = Color.white
 		bt.disconnect("pressed", self, "buttons_answer")
 		button_locked = false  # Desbloqueia o botão
 		
@@ -153,3 +153,31 @@ func _on_btn_menu_pressed():
 	Global.pontos = 0
 	Global.recorde = 0
 	get_tree().change_scene("res://cena/Menu.tscn")
+
+
+func _on_button_option_1_mouse_entered():
+	$question_holder/button_option_1/Seta.show()
+
+
+func _on_button_option_1_mouse_exited():
+	$question_holder/button_option_1/Seta.hide()
+
+
+func _on_button_option_2_mouse_entered():
+	$question_holder/button_option_2/Seta2.show()
+
+func _on_button_option_2_mouse_exited():
+	$question_holder/button_option_2/Seta2.hide()
+
+func _on_button_option_3_mouse_entered():
+	$question_holder/button_option_3/Seta3.show()
+
+func _on_button_option_3_mouse_exited():
+	$question_holder/button_option_3/Seta3.hide()
+
+func _on_button_option_4_mouse_entered():
+	$question_holder/button_option_4/Seta4.show()
+
+func _on_button_option_4_mouse_exited():
+	$question_holder/button_option_4/Seta4.hide()
+

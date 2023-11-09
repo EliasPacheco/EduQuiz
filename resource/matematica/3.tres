@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Quantos lados tem um triângulo?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "2", "3", "4", "5" ]
+correct = "3"

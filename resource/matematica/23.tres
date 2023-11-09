@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Qual é a metade de 40?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "10", "20", "15", "5" ]
+correct = "20"

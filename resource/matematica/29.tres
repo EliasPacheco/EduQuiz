@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-question_info = ""
+question_info = "Se você tem 18 bolinhas e divide igualmente em 3 caixas, quantas bolinhas haverá em cada caixa?"
 type = 1
-options = [ "", "", "", "" ]
-correct = ""
+options = [ "4", "6", "9", "12" ]
+correct = "6"

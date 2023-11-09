@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://imagens/eduquiz/materias.jpeg" type="Texture" id=1]
 [ext_resource path="res://legendas/Roboto-Black.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://scripts/Materias.gd" type="Script" id=3]
+[ext_resource path="res://imagens/eduquiz/seta.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=2]
 size = 42
@@ -71,4 +72,41 @@ custom_fonts/font = SubResource( 4 )
 text = "História"
 flat = true
 
+[node name="Seta" type="Sprite" parent="."]
+visible = false
+position = Vector2( 55, 320 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+
+[node name="Seta2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 55, 535 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+
+[node name="Seta3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1227, 322 )
+rotation = -3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+
+[node name="Seta4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1227, 556 )
+rotation = -3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+
+[connection signal="mouse_entered" from="botoes/port" to="." method="_on_port_mouse_entered"]
+[connection signal="mouse_exited" from="botoes/port" to="." method="_on_port_mouse_exited"]
 [connection signal="pressed" from="botoes/port" to="." method="_on_port_pressed"]
+[connection signal="mouse_entered" from="botoes/mat" to="." method="_on_mat_mouse_entered"]
+[connection signal="mouse_exited" from="botoes/mat" to="." method="_on_mat_mouse_exited"]
+[connection signal="pressed" from="botoes/mat" to="." method="_on_mat_pressed"]
+[connection signal="mouse_entered" from="botoes/geo" to="." method="_on_geo_mouse_entered"]
+[connection signal="mouse_exited" from="botoes/geo" to="." method="_on_geo_mouse_exited"]
+[connection signal="pressed" from="botoes/geo" to="." method="_on_geo_pressed"]
+[connection signal="mouse_entered" from="botoes/hist" to="." method="_on_hist_mouse_entered"]
+[connection signal="mouse_exited" from="botoes/hist" to="." method="_on_hist_mouse_exited"]
+[connection signal="pressed" from="botoes/hist" to="." method="_on_hist_pressed"]
