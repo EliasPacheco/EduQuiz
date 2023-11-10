@@ -5,7 +5,7 @@ var audio_player : AudioStreamPlayer
 var current_audio_stream : AudioStream
 var saved_playback_position : float = 0.0
 var is_audio_enabled : bool = true
-var current_volume_db : float = -5.0  # Ajuste o valor para diminuir o volume
+var current_volume_db : float = 0.0  # Ajuste o valor para diminuir o volume
 var music_playing : bool = false
 
 # Configuração do singleton

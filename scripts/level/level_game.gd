@@ -15,6 +15,8 @@ var timer := 30
 
 var answer_selected = false
 
+var audio_manager_instance
+
 onready var question_texts := $question_info/txt_question
 onready var question_image := $question_info/image_holder/question_image
 onready var question_video := $question_info/image_holder/question_video
@@ -170,7 +172,23 @@ func _on_btn_menu_pressed():
 	Global.correct = 0
 	Global.pontos = 0
 	Global.recorde = 0
+	# Obtenha uma referência válida para o AudioManager
+	audio_manager_instance = get_tree().get_root().get_node("AudioManager")
+	if audio_manager_instance == null:
+		var audio_manager_scene = preload("res://cena/AudioManager.tscn")
+		audio_manager_instance = audio_manager_scene.instance()
+		get_tree().get_root().add_child(audio_manager_instance)
+
+	# Salve a posição de reprodução antes de mudar a cena
+	if audio_manager_instance != null:
+		audio_manager_instance.save_playback_position()
+
+	# Mude a cena
 	get_tree().change_scene("res://cena/Menu.tscn")
+
+	# Retome a música de fundo na cena do menu
+	if audio_manager_instance != null:
+		audio_manager_instance.resume_background_audio()
 
 
 func _on_button_option_1_mouse_entered():
