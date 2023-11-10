@@ -3,7 +3,6 @@ extends Node2D
 var buttons := []
 
 func _ready():
-	AudioManager.play_sound(load("res://cena/audio.tscn"))
 	for _button in $botoes.get_children():
 		buttons.append(_button)
 		_button.focus_mode = Button.FOCUS_NONE
@@ -74,3 +73,7 @@ func _on_hist_mouse_entered():
 
 func _on_hist_mouse_exited():
 	$Seta4.hide()
+
+
+func _on_back_pressed():
+	get_tree().change_scene("res://cena/Menu.tscn")

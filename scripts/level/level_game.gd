@@ -21,22 +21,15 @@ onready var question_video := $question_info/image_holder/question_video
 onready var question_audio := $question_info/image_holder/question_audio
 
 func _ready():
-	print("QuizScreen.gd: _ready() chamado")
-	
-	# Obtendo uma referência direta ao AudioManager
-	var audio_manager = get_node("res://cena/audio.tscn")  # Substitua pelo caminho correto se necessário
-	
-	# Chamando stop_current_sound() na referência correta
-	if audio_manager:
-		audio_manager.stop_current_sound()
 	Global.gameState = true
+	AudioManager.stop_current_sound()
 	for _button in $question_holder.get_children():
 		buttons.append(_button)
 		_button.focus_mode = Button.FOCUS_NONE
 		
 	var game = $game
 	game.play()
-	game.volume_db = -37
+	game.volume_db = -50
 	quiz_shuffle = randomize_array(bd_quiz.bd)
 	#quiz_shuffle.resize(15) 
 	$txt_qntd.text = str(index, "/", bd_quiz.bd.size())

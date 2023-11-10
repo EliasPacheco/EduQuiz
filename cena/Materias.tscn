@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://imagens/eduquiz/materias.jpeg" type="Texture" id=1]
 [ext_resource path="res://legendas/Roboto-Black.ttf" type="DynamicFontData" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://audio/click.ogg" type="AudioStream" id=5]
 [ext_resource path="res://audio/escolha.ogg" type="AudioStream" id=6]
 [ext_resource path="res://audio/sound.ogg" type="AudioStream" id=7]
+[ext_resource path="res://imagens/eduquiz/arrow.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=2]
 size = 42
@@ -75,6 +76,14 @@ custom_fonts/font = SubResource( 4 )
 text = "História"
 flat = true
 
+[node name="back" type="TextureButton" parent="botoes"]
+margin_left = 9.0
+margin_top = 18.0
+margin_right = 248.0
+margin_bottom = 229.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 8 )
+
 [node name="Seta" type="Sprite" parent="."]
 visible = false
 position = Vector2( 55, 320 )
@@ -122,3 +131,4 @@ stream = ExtResource( 7 )
 [connection signal="mouse_entered" from="botoes/hist" to="." method="_on_hist_mouse_entered"]
 [connection signal="mouse_exited" from="botoes/hist" to="." method="_on_hist_mouse_exited"]
 [connection signal="pressed" from="botoes/hist" to="." method="_on_hist_pressed"]
+[connection signal="pressed" from="botoes/back" to="." method="_on_back_pressed"]

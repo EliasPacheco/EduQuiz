@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/popup_name.gd" type="Script" id=1]
 [ext_resource path="res://imagens/button/salvarc.png" type="Texture" id=2]
 [ext_resource path="res://scripts/ColorRect.gd" type="Script" id=3]
 [ext_resource path="res://imagens/button/salvare.png" type="Texture" id=4]
 [ext_resource path="res://legendas/Roboto-Black.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://imagens/eduquiz/close.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 5 )
@@ -43,4 +44,13 @@ texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 4 )
 texture_hover = ExtResource( 4 )
 
+[node name="close" type="TextureButton" parent="."]
+margin_left = 622.0
+margin_top = 320.0
+margin_right = 847.0
+margin_bottom = 545.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 6 )
+
 [connection signal="pressed" from="saveButton" to="." method="_on_saveButton_pressed"]
+[connection signal="pressed" from="close" to="." method="_on_TextureButton_pressed"]

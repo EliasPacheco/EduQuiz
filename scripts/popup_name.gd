@@ -37,3 +37,10 @@ func _on_saveButton_pressed():
 		# O LineEdit contém texto, salva o nome
 		save_name(name)
 
+
+
+func _on_TextureButton_pressed():
+	$ColorRect.hide()
+	$LineEdit.hide()
+	$saveButton.hide()
+	$close.hide()
