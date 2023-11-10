@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a área de um quadrado com lados de 6 cm?"
+type = 1
+options = [ "12 cm²", "36 cm²", "24 cm²", "18 cm²" ]
+correct = "36 cm²"

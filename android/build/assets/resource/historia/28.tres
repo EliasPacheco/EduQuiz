@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que foi a Guerra Civil Americana?"
+type = 1
+options = [ "Uma guerra entre Estados Unidos e México", "Uma guerra entre o Norte e o Sul dos Estados Unidos pela abolição da escravidão", "Uma guerra entre Estados Unidos e Canadá", "Uma guerra contra os povos indígenas americanos" ]
+correct = "Uma guerra entre o Norte e o Sul dos Estados Unidos pela abolição da escravidão"

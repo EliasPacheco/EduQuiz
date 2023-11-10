@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se você tem um terço de uma pizza e come mais um terço, quanto da pizza você comeu?"
+type = 1
+options = [ "Dois terços", "Um quarto", "Metade", "Um terço" ]
+correct = "Dois terços"

@@ -13,7 +13,7 @@ var quiz_shuffle := []
 
 var timer := 30
 
-var button_locked = false
+var answer_selected = false
 
 onready var question_texts := $question_info/txt_question
 onready var question_image := $question_info/image_holder/question_image
@@ -29,9 +29,9 @@ func _ready():
 		
 	var game = $game
 	game.play()
-	game.volume_db = -50
+	game.volume_db = -22
 	quiz_shuffle = randomize_array(bd_quiz.bd)
-	#quiz_shuffle.resize(15) 
+	quiz_shuffle.resize(10) 
 	$txt_qntd.text = str(index, "/", bd_quiz.bd.size())
 	load_quiz()
 
@@ -73,17 +73,17 @@ func load_quiz() -> void:
 	
 
 func buttons_answer(button):
-	if button_locked:
+	if answer_selected :
 		return
 
-	button_locked = true
+	answer_selected  = true
 
 	var selected_option = button.get_node("Label").text  # Obtém a opção selecionada pelo usuário
 
 	if bd_quiz.bd[index].correct == selected_option:  # Verifica se a resposta selecionada está correta
 		var click = $click
 		click.play()
-		click.volume_db = -15
+		click.volume_db = -5
 		button.modulate = cor_certa
 		Global.correct += 1
 		Global.pontos += 1
@@ -93,15 +93,15 @@ func buttons_answer(button):
 			Global.salvar_jogo()
 		var correto = $audio_correto
 		correto.play()
-		correto.volume_db = -25
+		correto.volume_db = -10
 	else: 
 		var click = $click
 		click.play()
-		click.volume_db = -15
+		click.volume_db = -5
 		button.modulate = cor_errada
 		var errado = $audio_errado
 		errado.play()
-		errado.volume_db = -25
+		errado.volume_db = -10
 
 		# Encontra o botão com a resposta correta
 		for bt in buttons:
@@ -110,7 +110,6 @@ func buttons_answer(button):
 
 	$redondo.value = 0
 	_next_question()
-	button_locked = false
 
 	
 func _next_question():
@@ -123,7 +122,7 @@ func _next_question():
 	for bt in buttons:
 		bt.modulate = Color.white
 		bt.disconnect("pressed", self, "buttons_answer")
-		button_locked = false  # Desbloqueia o botão
+		answer_selected = false  # Desbloqueia o botão
 		
 	question_audio.stream = null
 	question_video.stream = null
@@ -141,7 +140,7 @@ func randomize_array(array : Array) -> Array:
 func game_over():
 	var applause_player = $aplausos
 	applause_player.play()
-	applause_player.volume_db = -35
+	applause_player.volume_db = -16
 	$game.stop()
 	$pause.hide()
 	$valor.hide()

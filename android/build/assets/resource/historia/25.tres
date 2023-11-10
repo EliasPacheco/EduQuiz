@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que foi o Renascimento?"
+type = 1
+options = [ "Um período de renovação cultural, artística e científica na Europa", "Um movimento de independência na América Latina", "Uma revolução industrial na Inglaterra", "Uma guerra entre França e Inglaterra" ]
+correct = "Um período de renovação cultural, artística e científica na Europa"

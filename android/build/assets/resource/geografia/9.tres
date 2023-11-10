@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que é um deserto?"
+type = 1
+options = [ "Uma área coberta por gelo", "Uma região com muitas árvores", "Uma área com pouca vegetação e pouca chuva", "Uma grande montanha" ]
+correct = "Uma área com pouca vegetação e pouca chuva"

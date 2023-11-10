@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que a Independência do Brasil representou?"
+type = 1
+options = [ "O fim do Brasil", "O início do governo monárquico", "A autonomia do Brasil em relação a Portugal", "A união do Brasil com outros países sul-americanos" ]
+correct = "A autonomia do Brasil em relação a Portugal"

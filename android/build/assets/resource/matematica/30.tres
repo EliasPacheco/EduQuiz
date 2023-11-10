@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se uma caixa contém 24 lápis e você retira 7 lápis, quantos lápis ainda estão na caixa?"
+type = 1
+options = [ "14", "17", "10", "31" ]
+correct = "17"

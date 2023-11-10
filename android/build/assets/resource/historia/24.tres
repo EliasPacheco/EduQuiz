@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Quem foi o imperador do Brasil quando a escravidão foi oficialmente abolida?"
+type = 1
+options = [ "Dom Pedro II", "Dom João VI", "Dom Pedro I", "Dom Manuel I" ]
+correct = "Dom Pedro II"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual dessas palavras é um antônimo de \"pequeno\"?"
+type = 1
+options = [ "Grande", "Lento", "Fraco", "Amarelo" ]
+correct = "Grande"

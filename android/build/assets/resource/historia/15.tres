@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que foi a Revolução Industrial?"
+type = 1
+options = [ "um movimento político no século XIX", "Um período de intensificação da produção e urbanização", "Uma guerra entre potências europeias", "Um evento que marcou a independência de países sul-americanos" ]
+correct = "Um período de intensificação da produção e urbanização"

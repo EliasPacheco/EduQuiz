@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é a função de um ponto final (.) em uma frase?"
+type = 1
+options = [ "Separar o sujeito do predicado", "Indicar uma pergunta", "Marcar o fim de uma frase declarativa", "Separar palavras que rimam" ]
+correct = "Marcar o fim de uma frase declarativa"

@@ -42,7 +42,7 @@ func _on_port_mouse_entered():
 	$Seta.show()
 	var escolha = $escolha
 	escolha.play()
-	escolha.volume_db = -28
+	escolha.volume_db = -10
 
 func _on_port_mouse_exited():
 	$Seta.hide()
@@ -51,7 +51,7 @@ func _on_mat_mouse_entered():
 	$Seta2.show()
 	var escolha = $escolha
 	escolha.play()
-	escolha.volume_db = -28
+	escolha.volume_db = -10
 
 func _on_mat_mouse_exited():
 	$Seta2.hide()
@@ -60,7 +60,7 @@ func _on_geo_mouse_entered():
 	$Seta3.show()
 	var escolha = $escolha
 	escolha.play()
-	escolha.volume_db = -28
+	escolha.volume_db = -10
 
 func _on_geo_mouse_exited():
 	$Seta3.hide()
@@ -69,7 +69,7 @@ func _on_hist_mouse_entered():
 	$Seta4.show()
 	var escolha = $escolha
 	escolha.play()
-	escolha.volume_db = -28
+	escolha.volume_db = -10
 
 func _on_hist_mouse_exited():
 	$Seta4.hide()

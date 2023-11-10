@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual foi o evento que marcou o início da Revolução Industrial na Inglaterra?"
+type = 1
+options = [ "Invenção do motor a vapor", "Descobrimento da eletricidade", "Revolução Francesa", "Invenção da locomotiva a vapor" ]
+correct = "Invenção do motor a vapor"

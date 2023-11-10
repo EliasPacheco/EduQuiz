@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se um pacote de lápis custa 6 reais e você compra 4 pacotes, quanto você gastará no total?"
+type = 1
+options = [ "10 reais", "16 reais", "20 reais", "24 reais" ]
+correct = "24 reais"

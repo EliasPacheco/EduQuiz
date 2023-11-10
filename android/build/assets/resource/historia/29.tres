@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual foi a principal atividade econômica dos povos indígenas na América do Norte antes da colonização europeia?"
+type = 1
+options = [ "Agricultura", "Pesca", "Caça e coleta", "Mineração" ]
+correct = "Caça e coleta"

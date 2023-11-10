@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Qual é o resultado de 5 x 7 - 3?"
+type = 1
+options = [ "32", "20", "25", "10" ]
+correct = "32"

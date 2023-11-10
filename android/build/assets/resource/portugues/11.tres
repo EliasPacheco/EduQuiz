@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que são os \"antônimos\" de uma palavra?"
+type = 1
+options = [ "Palavras que têm o mesmo significado", "Palavras que têm significados opostos", "Palavras que rimam", "Palavras que são sinônimas" ]
+correct = "Palavras que têm significados opostos"

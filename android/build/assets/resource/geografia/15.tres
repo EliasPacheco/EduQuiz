@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que é a linha do Equador?"
+type = 1
+options = [ "Uma linha imaginária que divide a Terra em Hemisfério Norte e Sul", "Uma linha de trem que atravessa o continente africano", "Uma fronteira entre países", "Uma cordilheira nas Américas" ]
+correct = "Uma linha imaginária que divide a Terra em Hemisfério Norte e Sul"

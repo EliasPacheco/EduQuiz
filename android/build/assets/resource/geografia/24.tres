@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que é latitude?"
+type = 1
+options = [ "Distância leste ou oeste do meridiano de Greenwich", "Distância norte ou sul do Equador", "Distância vertical de um ponto em relação ao nível do mar", "Distância entre dois pontos na superfície da Terra" ]
+correct = "Distância norte ou sul do Equador"

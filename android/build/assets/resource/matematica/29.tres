@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se você tem 18 bolinhas e divide igualmente em 3 caixas, quantas bolinhas haverá em cada caixa?"
+type = 1
+options = [ "4", "6", "9", "12" ]
+correct = "6"

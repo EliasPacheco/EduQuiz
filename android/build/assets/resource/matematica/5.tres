@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se você tiver 8 lápis e der 3 a um amigo, quantos lápis você terá?"
+type = 1
+options = [ "2", "5", "8", "11" ]
+correct = "5"

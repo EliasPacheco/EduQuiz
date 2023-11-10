@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se você tem R$ 15 e gasta R$ 6, quanto dinheiro sobra?"
+type = 1
+options = [ "R$ 21", "R$ 9", "R$ 6", "R$ 11" ]
+correct = "R$ 9"

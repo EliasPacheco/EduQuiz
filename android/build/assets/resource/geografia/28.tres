@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que são coordenadas geográficas?"
+type = 1
+options = [ "Números usados para identificar um país", "Linhas imaginárias que indicam pontos na Terra", "Símbolos usados em mapas", "Nomes de cidades importantes" ]
+correct = "Linhas imaginárias que indicam pontos na Terra"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "Se um retângulo tem comprimento 8 cm e largura 3 cm, qual é a sua área?"
+type = 1
+options = [ "11 cm²", "21 cm²", "24 cm²", "15 cm²" ]
+correct = "24 cm²"

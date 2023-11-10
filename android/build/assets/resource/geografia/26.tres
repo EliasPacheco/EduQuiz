@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O que é um fuso horário?"
+type = 1
+options = [ "Uma linha que divide continentes", "Uma região onde o tempo é o mesmo", "Uma linha que indica os pontos cardeais", "Uma linha imaginária que divide a Terra em áreas com horários diferentes" ]
+correct = "Uma linha imaginária que divide a Terra em áreas com horários diferentes"
