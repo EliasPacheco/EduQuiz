@@ -15,26 +15,32 @@ func _on_button_mouse_entered(button):
 func _on_button_mouse_exited(button):
 	button.modulate = Color(1.0, 1.0, 1.0) # Restaura a cor original (preto) do botão quando o mouse sai
 
+func _set_materia_and_save(nome_materia: String):
+	Global.materia = nome_materia
+	print("Matéria escolhida:", Global.materia)
+	Global.salvar_jogo()
 
 func _on_port_pressed():
 	$click.play()
+	_set_materia_and_save("Português")
 	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/portugues.tscn")
-		
-
-
+	
 func _on_mat_pressed():
 	$click.play()
+	_set_materia_and_save("Matemática")
 	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/matematica.tscn")
 
 func _on_geo_pressed():
 	$click.play()
+	_set_materia_and_save("Geografia")
 	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/geografia.tscn")
 
 func _on_hist_pressed():
 	$click.play()
+	_set_materia_and_save("História")
 	yield(get_tree().create_timer(0.3), "timeout")
 	get_tree().change_scene("res://cena/historia.tscn")
 
@@ -73,7 +79,6 @@ func _on_hist_mouse_entered():
 
 func _on_hist_mouse_exited():
 	$Seta4.hide()
-
 
 func _on_back_pressed():
 	get_tree().change_scene("res://cena/Menu.tscn")

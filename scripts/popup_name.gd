@@ -11,7 +11,6 @@ func _ready():
 func save_name(name: String) -> void:
 	Global.nome = name
 	print("Nome salvo: ", name)
-	Global.salvar_jogo()
 	get_tree().change_scene("res://cena/Materias.tscn")
 
 func load_game() -> void:
@@ -36,8 +35,6 @@ func _on_saveButton_pressed():
 	else:
 		# O LineEdit contém texto, salva o nome
 		save_name(name)
-
-
 
 func _on_TextureButton_pressed():
 	$ColorRect.hide()

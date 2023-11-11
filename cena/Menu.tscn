@@ -61,6 +61,26 @@ margin_bottom = 705.0
 custom_fonts/font = SubResource( 1 )
 text = "elias-pacheco-450373218"
 
+[node name="buttons" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="git" type="Button" parent="buttons"]
+margin_left = 10.0
+margin_top = 608.0
+margin_right = 193.0
+margin_bottom = 657.0
+flat = true
+
+[node name="link" type="Button" parent="buttons"]
+margin_left = 13.0
+margin_top = 674.0
+margin_right = 330.0
+margin_bottom = 719.0
+flat = true
+
 [connection signal="pressed" from="recorde" to="." method="_on_recorde_pressed"]
 [connection signal="pressed" from="comojogar" to="." method="_on_comojogar_pressed"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="buttons/git" to="." method="_on_git_pressed"]
+[connection signal="pressed" from="buttons/link" to="." method="_on_link_pressed"]

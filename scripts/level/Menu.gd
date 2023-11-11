@@ -3,7 +3,12 @@ extends Node2D
 var popup_instance
 var audio_manager_instance
 
+var buttons := []
+
 func _ready():
+	for _button in $buttons.get_children():
+		buttons.append(_button)
+		_button.focus_mode = Button.FOCUS_NONE
 	audio_manager_instance = get_tree().get_root().get_node("AudioManager")
 	if audio_manager_instance == null:
 		var audio_manager_scene = preload("res://cena/AudioManager.tscn")
@@ -35,3 +40,12 @@ func _on_recorde_pressed():
 	# Salva o estado da música antes de mudar de cena
 	audio_manager_instance.save_playback_position()
 	get_tree().change_scene("res://cena/Ranking.tscn")
+
+
+func _on_git_pressed():
+	var url = "https://github.com/EliasPacheco/EduQuiz"
+	OS.shell_open(url)
+
+func _on_link_pressed():
+	var url = "https://www.linkedin.com/in/elias-pacheco-450373218/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+	OS.shell_open(url)

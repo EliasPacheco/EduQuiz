@@ -6,41 +6,45 @@ var recorde = 0
 var correct := 0
 var pontos = 0
 var nome = ""
+var materia = ''
 
 func salvar():
 	var dic_salvar = {
 		"recorde": recorde,
 		"nome": nome,
+		"materia": materia,
 	}
 	return dic_salvar
 
 func salvar_jogo():
 	var jogo_salvo = File.new()
 	jogo_salvo.open("user://jogosalvo.save", File.WRITE)
-	
+
 	var registro = {
 		"nome": nome,
-		"recorde": recorde
+		"recorde": recorde,
+		"materia": materia,
 	}
-	
+
 	var indice = -1
 	for i in range(lista_registros.size()):
 		if lista_registros[i].nome == nome:
 			indice = i
 			break
-	
+
 	if indice != -1:
 		if recorde > lista_registros[indice].recorde:
 			lista_registros[indice] = registro  # Atualiza o registro apenas se o novo recorde for maior
 	else:
 		lista_registros.append(registro)  # Adiciona um novo registro
-	
+
 	var dic_salvar = {
 		"registros": lista_registros
 	}
-	
+
 	jogo_salvo.store_string(to_json(dic_salvar))
 	jogo_salvo.close()
+
 
 func carregar_jogo():
 	var jogo_salvo = File.new()
@@ -82,7 +86,8 @@ func carregar_jogo():
 		recorde = 0  # Define o recorde como zero se o nome não existir na lista
 		var novo_registro = {
 			"nome": nome,
-			"recorde": recorde
+			"recorde": recorde,
+			"materia": materia,
 		}
 		lista_registros.append(novo_registro)
 
