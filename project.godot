@@ -31,8 +31,9 @@ jvm_options="-XX:StartFlightRecording=false"
 [application]
 
 config/name="EduQuiz"
+config/description="Game Educacional"
 run/main_scene="res://cena/Menu.tscn"
-config/icon="res://imagens/iconemobile.png"
+config/icon="res://imagens/icon.png"
 config/windows_native_icon="res://imagens/icone.ico"
 
 [autoload]

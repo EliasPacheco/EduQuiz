@@ -9,9 +9,13 @@ func _ready():
 
 
 func save_name(name: String) -> void:
-	Global.nome = name
-	print("Nome salvo: ", name)
-	get_tree().change_scene("res://cena/Materias.tscn")
+	if name.strip_edges().empty():
+		print("Nome inválido. Não será salvo.")
+	else:
+		Global.nome = name
+		print("Nome salvo: ", name)
+		get_tree().change_scene("res://cena/Materias.tscn")
+
 
 func load_game() -> void:
 	Global.carregar_jogo()
